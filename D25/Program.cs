@@ -1,8 +1,8 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using System;
-namespace D25
+namespace Sep25
 {
-    class Program
+    class ProgramSys
     {
         static void Main(string[] args)
         {
@@ -98,6 +98,7 @@ namespace D25
             //1 byte =8bits
             var a = 1;
             var b = 2;
+
             Console.WriteLine(a + b);
             Console.WriteLine((float)a/(float)b);
             Console.WriteLine(a==b);
