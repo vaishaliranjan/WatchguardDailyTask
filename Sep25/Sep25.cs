@@ -1,6 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using System;
-namespace D25
+namespace Sep25
 {
     class Sep25
     {
@@ -102,7 +102,6 @@ namespace D25
             Console.WriteLine((float)a / (float)b);
             Console.WriteLine(a == b);
 
-            Console.Read();
         }
     }
 
