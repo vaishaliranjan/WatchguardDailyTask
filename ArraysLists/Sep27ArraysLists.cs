@@ -4,9 +4,9 @@ using System.Net.NetworkInformation;
 using System.Runtime.InteropServices;
 using System.Runtime.Intrinsics.X86;
 
-namespace Sep27
+namespace CSharpBeg
 {
-    class Program
+    class Sep27
     {
 
         static void ChangeArrayElements(int[] arr)
@@ -30,7 +30,7 @@ namespace Sep27
             //n elements - 0 to n-1 index 
 
             //Initializing 1D Array
-            int[] arr1 = new int[3];
+            /*int[] arr1 = new int[3];
             int[] arr2 = new int[3] { 1, 2, 3 };
             int[] arr3 = { 1, 2, 3 };
             //Console.WriteLine("{0}, {1}, {2}", arr1.Length, arr2.Length, arr3.Length);
@@ -110,7 +110,7 @@ namespace Sep27
 
 
             //SORT - Array.Sort(array)
-            int[] arr11 = new int[6] { 55, 11, 45, 66, 78, 88 };
+            
             Array.Sort(arr11);
             for (int i = 0; i < arr11.Length; i++)
             {
@@ -188,8 +188,79 @@ namespace Sep27
             {
                 //Console.Write(num);
             }
-            list.Clear();
+            list.Clear(); */
 
+            ////////////////////////////////////// EXERCISE ///////////////////////////////////
+            ///1. Write a program and continuously ask the user to enter different names, until the user presses Enter (without supplying a name). Depending on the number of names provided, display a message based on the above pattern.
+            //List<string> list = new List<string>();
+            //while (true)
+            //{
+            //    Console.WriteLine("Enter a name: ");
+            //    var name= Console.ReadLine();
+
+            //    if (String.IsNullOrEmpty(name)){
+            //        break;
+            //    }
+            //    list.Add(name);
+
+            //}
+            //if(list.Count == 1)
+            //{
+            //    Console.WriteLine(list[0]+" likes your post.");
+            //}
+            //else if (list.Count == 2)
+            //{
+            //    Console.WriteLine(list[0] +" and " + list[1] + " like your post.");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("{0}, {1} and {2} others like your post.", list[0], list[1], list.Count-2);
+            //}
+
+            // 2- Write a program and ask the user to enter their name. Use an array to reverse the name and then store the result in a new string. Display the reversed name on the console.
+            //Console.WriteLine("Enter your name: ");
+            //string name= Console.ReadLine();
+
+            //var arr = name.Split(" ");
+
+            //int start = 0;
+            //int end = arr.Length - 1;
+
+            //while(start < end)
+            //{
+            //    string temp= arr[start];
+            //    arr[start] = arr[end];
+            //    arr[end]= temp;
+            //    start++;
+            //    end--;
+            //}
+
+            //string revName = String.Join(" ", arr);
+            //Console.WriteLine(revName);
+
+
+            //3- Write a program and ask the user to enter 5 numbers. If a number has been previously entered, display an error message and ask the user to re-try. Once the user successfully enters 5 unique numbers, sort them and display the result on the console.
+
+            List<int> arr = new List<int>();
+            //Console.WriteLine("Enter five numbers: ");
+            //for (int i=0; i<5;i++)
+            //{
+            //    int num = Console.Read();
+            //    if(arr.Contains(num))
+            //    {
+            //        i--;
+            //        Console.WriteLine("Already exist! Try again.");
+            //        continue;
+            //    }
+            //    arr.Add(num);
+            //}
+            //arr.Sort();
+            //for(int i = 0; i < arr.Count; i++)
+            //{
+            //    Console.WriteLine(arr[i]);
+            //}
+
+            int[] arr11 = new int[6] { 55, 11, 45, 66, 78, 88 };
 
         }
     }

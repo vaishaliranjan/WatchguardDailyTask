@@ -2,7 +2,7 @@
 using Sep26.Math;
 using System;
 
-namespace Sep26
+namespace CSharpBeg
 {
     
     //public enum ShippingMethods

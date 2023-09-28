@@ -4,9 +4,9 @@ using System.Net.NetworkInformation;
 using System.Runtime.InteropServices;
 using System.Runtime.Intrinsics.X86;
 
-namespace Sep27
+namespace CSharpBeg
 {
-    class Sep27Strings
+    class Sep27
     {
 
         static void Main(String[] args)
@@ -18,29 +18,35 @@ namespace Sep27
             //STRINGS Initialization
             string str1 = "My nameis Vaishali Ranjan";
             string str2 = new string("Vaishali"); //using Constructor 
-           
+
             //Console.WriteLine(str1);
             //Console.WriteLine(str2);
 
             char[] chars = { 'w', 'o', 'r', 'd' };
             // Create a string from a character array.
-            string string1 = new string(chars);
+            //string string1 = new string(chars);
             //Console.WriteLine(string1);
 
             // Create a string that consists of a character repeated 20 times.
-            string string2 = new string('c', 20);
+            //string string2 = new string('c', 20);
             // Console.WriteLine(string2);
 
             //Various Methods in Strings- 
             /* 
             1. Concatenation - + operator 
-            2. Substring
+            2. Substring- str.Substring(startIndex,length)
             3. String Format
-            4. Strings and indexes
+            4. Strings and indexes - str.IndexOf("find") or strIndexOf("find", startIndex)
             5. Null strings and Empty strings 
-            6. String Comparison and Equality
-            7. Sort
-            8. Length
+            6. String Comparison and Equality - ==, str1.Equals(str2), STATIC: obj.RefrenceEquals(str1,str2)
+            7. Sort- STATIC Array.Sort(strArray)
+            8. Length- str.Length
+            9. Formatting
+            10. Replacing str.Replace("one","another")
+            11. Null checking- STATIC String.IsNullOrEmpty(str) or String.IsNullOrWhitespace(str)
+            12. Splitting- str.Split("given")
+            13. Converting string to numbers-   STATIC int.Parse(str) or Convert.ToInt32(str)
+            14. Converting numbers to string-  i.ToString()
            
 
 
@@ -59,6 +65,8 @@ namespace Sep27
             //--------------------------------- 2. String Substring ---------------------------------------
             // It is used to extract Substring
             // Used as .Substring(startIndex, length)
+
+
             //string str3 = "This is one sentence. " + "This is a second. ";
             //Console.WriteLine(str3.Substring(1,28));
             //.IndexOf is used to find the specific index in which the character is present 
@@ -87,7 +95,10 @@ namespace Sep27
 
             //--------------------------------- 4. String Indexes ---------------------------------------
             //.IndexOf is used to find the specific index in which the character is present 
+            
             //.IndexOf("char"), IndexOf("char", startIndex)- can be used to find the index of a substring or to check if a particular substring is 
+            
+            
             //present in the string or not
             string sentence1 = "This sentence has five words.";
             //algorithm- find the index of the first letter of 2nd word then calculate the length of that word
@@ -192,13 +203,57 @@ namespace Sep27
 
             //--------------------------------- 8. Length ---------------------------------------
             string stra = "Vaishali";
-           // Console.WriteLine(stra.Length);
+            // Console.WriteLine(stra.Length);
 
             //Q. How is String different from string?
             // String stands for System.String and it is a.NET Framework type. string is an alias in the C# language for System.String. Both of them are compiled to System.String in IL (Intermediate Language), so there is no difference.
             //"String" with a capital "S" is a keyword that refers to the built-in string data type in the .NET Framework's Base Class Library. It is a reference type that represents a sequence of characters.
             ////On the other hand, "string" with a lowercase "s" is an alias for the "System.String" type, which means they are essentially the same thing.The use of "string" is just a shorthand way of referring to the "System.String" type, and it is used more commonly in C# code.
 
+            //---------------------------------9. Formatting ---------------------
+            //ToUpper(), ToLower(), Trim()-removes whitespaces from left and right of  a string 
+            string string1 = "Watchguard ";
+            //Console.WriteLine(string1.ToUpper());
+            //Console.WriteLine(string1.ToLower());
+            //Console.WriteLine(string1.Trim());
+
+
+            //---------------------------------10. Replacing-------------------
+            //Console.WriteLine(string1.Replace('W','w')); //immutable
+            //Console.WriteLine(string1.Replace(" ","Technologies"));
+            //Console.WriteLine(string1);
+
+
+            //---------------------------------11. Null Checking --------------------------------
+            //Static methods- String.IsNullOrEmpty() , String.IsNullOrWhiteSpace
+
+            string string2 = null;
+            //Console.WriteLine(string2);
+            //Console.WriteLine(String.IsNullOrEmpty(string2));
+            //Console.WriteLine(String.IsNullOrWhiteSpace(string2));
+
+            //---------------------------------12. Splitting --------------------------------------
+            string companyName = "Watchguard Technologies";
+            var words = companyName.Split(" "); // split based on the specific character
+            Console.WriteLine(words[0]);
+
+
+            //---------------------------------13. Converting strings to numbers------------------------
+            string s = "12";
+            int y = int.Parse(s); //throws null exception if the string is null
+            int z = Convert.ToInt32(s); //converts the value to 0 if the string is null
+            Console.WriteLine("{0}, {1}", y, z);
+
+
+
+            //---------------------------------14. Converting numbers  to strings------------------------
+            int h = 12;
+            string string3 = h.ToString();
+            string t = h.ToString("C");
+            string t1 = h.ToString("C0");
+            Console.WriteLine(string3 + " " + t + " " + t1);
+
+           
 
         }
     }

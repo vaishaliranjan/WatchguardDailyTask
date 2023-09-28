@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace DateText
+namespace CSharpBeg
 {
-    class Program
+    class Sep28
     {
         static void Main(string[] args)
         {
