@@ -8,9 +8,13 @@ namespace CSharpBeg
         {
             //-------------------------------------------1. Date and Time ------------------------------------------------
             //DateTime and TimeSpan are immutable
-            DateTime date = new DateTime(2015, 12, 11);
+            DateTime date = DateTime.Now;
+            Console.WriteLine(date);
+            var universal = date.ToUniversalTime();
+
+            Console.WriteLine(universal);
             //var date = new DateTime(2015, 12, 11);(year, month, day)
-           // Console.WriteLine(date);
+            // Console.WriteLine(date);
 
 
             //Time right now
@@ -45,46 +49,47 @@ namespace CSharpBeg
 
 
             //-------------------------------------------------------------------------2. TimeSPan --------------------------------------------
-            TimeSpan timeSpan = new TimeSpan(11, 3, 56);//(hour, min, sec)           
+            TimeSpan timeSpan = new TimeSpan(11, 3, 56);//(hour, min, sec)
+           
             TimeSpan timeSpan1 = new TimeSpan(11, 0, 0);
             //other components ->0
             var timeSpan2 = TimeSpan.FromHours(13);
             var timespan3= TimeSpan.FromMinutes(12);
             var timeSpan4 = TimeSpan.FromSeconds(13);
 
-            Console.WriteLine(timeSpan);
-            Console.WriteLine(timeSpan1);
-            Console.WriteLine(timeSpan2);
-            Console.WriteLine(timespan3);
-            Console.WriteLine(timeSpan4);
+            //Console.WriteLine(timeSpan);
+            //Console.WriteLine(timeSpan1);
+            //Console.WriteLine(timeSpan2);
+            //Console.WriteLine(timespan3);
+            //Console.WriteLine(timeSpan4);
 
             //Find Duration- subtract two DateTime
             DateTime date1 = DateTime.Now;
             DateTime date2 = DateTime.Now.AddMinutes(1);
             var duration = date2 - date1; //when we subtract two datTime of same date then we get a timespan
-            Console.WriteLine("Duration: "+duration);
+            //Console.WriteLine("Duration: "+duration);
 
-            //Properties
-            Console.WriteLine("Minute: "+timeSpan.Minutes);
-            Console.WriteLine("Total Minuts: "+timeSpan2.TotalMinutes); //return hours->minutes
+            ////Properties
+            //Console.WriteLine("Minute: "+timeSpan.Minutes);
+            //Console.WriteLine("Total Minuts: "+timeSpan2.TotalMinutes); //return hours->minutes
 
-            //Add
-            Console.WriteLine("Add: "+timeSpan.Add(new TimeSpan(12,0,0))); //add takes new timespan as an arg in TimeSpan
-            //Subtract
-            Console.WriteLine("Subtract: "+timeSpan.Subtract(TimeSpan.FromMinutes(1)));
+            ////Add
+            //Console.WriteLine("Add: "+timeSpan.Add(new TimeSpan(12,0,0))); //add takes new timespan as an arg in TimeSpan
+            ////Subtract
+            //Console.WriteLine("Subtract: "+timeSpan.Subtract(TimeSpan.FromMinutes(1)));
 
-            //To string
-            Console.WriteLine("To string: "+timeSpan.ToString());
+            ////To string
+            //Console.WriteLine("To string: "+timeSpan.ToString());
 
-            //Parse- convert string to timespan
-            Console.WriteLine("Parse: "+TimeSpan.Parse("12:22:00"));
+            ////Parse- convert string to timespan
+            //Console.WriteLine("Parse: "+TimeSpan.Parse("12:22:00"));
 
-            ///DateTime objects are immutable, which means once they're set, they cannot be changed. Here, AddYears() method returns a new DateTime object but we're not storing it in any variables.
-            ///
-            var dateTime = new DateTime(2015, 1, 1);
-            //unchangeable
-            dateTime.AddYears(1); //we need to store it in a variable or simply print it
-            Console.WriteLine(dateTime.Year);
+            /////DateTime objects are immutable, which means once they're set, they cannot be changed. Here, AddYears() method returns a new DateTime object but we're not storing it in any variables.
+            /////
+            //var dateTime = new DateTime(2015, 1, 1);
+            ////unchangeable
+            //dateTime.AddYears(1); //we need to store it in a variable or simply print it
+            //Console.WriteLine(dateTime.Year);
 
 
         }

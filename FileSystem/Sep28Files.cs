@@ -43,7 +43,7 @@ namespace CSharpBeg
             //------------------------ Directory & DirectoryInfo --------------------
 
             //Directory
-           // Directory.CreateDirectory(path);
+            // Directory.CreateDirectory(path);
 
             //var files=Directory.GetFiles(path, ".sln",SearchOption.AllDirectories);
             //foreach (var file in files) 
@@ -66,14 +66,32 @@ namespace CSharpBeg
             //directoryInfo.Delete();
 
             //------------------------------------Path--------------------
-            var path = "c:\\somefile.jpg";
+            //var path = "c:\\somefile.jpg";
 
-            //using string- get extension we would need iindexOf here
+            ////using string- get extension we would need iindexOf here
 
-            Console.WriteLine("Extension: "+ Path.GetExtension(path));
-            Console.WriteLine("File Name: "+ Path.GetFileName(path));
-            Console.WriteLine("File name witout extension: "+ Path.GetFileNameWithoutExtension(path));
-            Console.WriteLine("Directory Name: "+ Path.GetDirectoryName(path));
+            //Console.WriteLine("Extension: "+ Path.GetExtension(path));
+            //Console.WriteLine("File Name: "+ Path.GetFileName(path));
+            //Console.WriteLine("File name witout extension: "+ Path.GetFileNameWithoutExtension(path));
+            //Console.WriteLine("Directory Name: "+ Path.GetDirectoryName(path));
+
+            var path = @"C:\Users\vranjan\OneDrive - WatchGuard Technologies Inc\Desktop\Question1.txt";
+            var content= File.ReadAllText(path);
+            content= content.ToString();
+            string[] words = content.Split(" ");
+
+            //Console.WriteLine(words.Length);
+
+            int maxLength = int.MinValue;
+            string longString = "";
+            for(int i=0; i<words.Length; i++)
+            {
+                if (words[i].Length > maxLength)
+                {
+                    longString = words[i];
+                }
+            }
+            Console.WriteLine(longString);
         }
     }
 }

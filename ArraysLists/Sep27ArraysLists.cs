@@ -1,5 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using System;
+using System.Collections;
 using System.Net.NetworkInformation;
 using System.Runtime.InteropServices;
 using System.Runtime.Intrinsics.X86;
@@ -30,15 +31,16 @@ namespace CSharpBeg
             //n elements - 0 to n-1 index 
 
             //Initializing 1D Array
-            /*int[] arr1 = new int[3];
+            int[] arr1 = new int[3];
             int[] arr2 = new int[3] { 1, 2, 3 };
             int[] arr3 = { 1, 2, 3 };
             //Console.WriteLine("{0}, {1}, {2}", arr1.Length, arr2.Length, arr3.Length);
             ChangeArrayElements(arr2);
             for (int i = 0; i < arr2.Length; i++)
             {
-                //Console.Write(arr2[i]);
+                Console.Write(arr2[i]);
             }
+            /*
             //Console.WriteLine();
             //Initializing 2D Array - for loop GetLength(0) and ',' GetLength(1)
             int[,] arr4 = new int[3, 3];
@@ -241,7 +243,7 @@ namespace CSharpBeg
 
             //3- Write a program and ask the user to enter 5 numbers. If a number has been previously entered, display an error message and ask the user to re-try. Once the user successfully enters 5 unique numbers, sort them and display the result on the console.
 
-            List<int> arr = new List<int>();
+            //List<int> arr = new List<int>();
             //Console.WriteLine("Enter five numbers: ");
             //for (int i=0; i<5;i++)
             //{
@@ -260,9 +262,73 @@ namespace CSharpBeg
             //    Console.WriteLine(arr[i]);
             //}
 
-            int[] arr11 = new int[6] { 55, 11, 45, 66, 78, 88 };
+            // 4- Write a program and ask the user to continuously enter a number or type "Quit" to exit. The list of numbers may include duplicates. Display the unique numbers that the user has entered.
 
-        }
+            //Console.WriteLine("Write a number or type Quit: ");
+            //List<int> list = new List<int>();
+            //while (true)
+            //{
+            //    var ans = Console.ReadLine();
+            //    if (ans.Equals("Quit"))
+            //    {
+            //        break;
+            //    }
+            //    int num = Convert.ToInt32(ans);
+            //    list.Add(num);
+            //}
+            //Console.WriteLine("Elements: ");
+            //var group = list.GroupBy(x => x);
+
+            //foreach(var item in group)
+            //{
+            //    Console.WriteLine(item.Key);
+            //}
+
+            //5- Write a program and ask the user to supply a list of comma separated numbers (e.g 5, 1, 9, 2, 10). If the list is empty or includes less than 5 numbers, display "Invalid List" and ask the user to re-try; otherwise, display the 3 smallest numbers in the list.
+            //while (true)
+            //{
+            //    string num = Console.ReadLine();
+            //    var arr1 = num.Split(", ");
+            //    var numArr = new int[arr1.Length];
+            //    for (int i = 0; i < arr1.Length; i++)
+            //    {
+            //        numArr[i] = Convert.ToInt32(arr1[i]);
+            //    }
+            //    if (numArr.Length == 0 || numArr.Length < 5)
+            //    {
+            //        Console.WriteLine("Invalid List. Try again!");
+
+            //    }
+            //    else
+            //    {
+            //        Array.Sort(numArr);
+            //        for(int i=0; i < 3; i++)
+            //        {
+            //            Console.WriteLine(numArr[i]);
+            //        }
+            //        break;
+            //    }
+
+
+            ArrayList arr = new ArrayList();
+            arr.Add("Ritika");
+            arr.Add("Vaishali");
+            arr.Add(2);
+            arr.Capacity = 2;
+            arr.Add(9);
+
+            for (int i = 0; i < arr.Count; i++)
+            {
+                Console.WriteLine(arr[i]);
+            }
+            }
+            
+            
+
+
+
+
+        
     }
 
 }

@@ -39,6 +39,12 @@ namespace CSharpBeg
             //Console.WriteLine(summary);
             return String.Join(" ", SummaryWords);
 
+
+
+
+
+
+
         }
     }
 }
