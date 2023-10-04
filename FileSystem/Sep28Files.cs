@@ -10,7 +10,7 @@ namespace CSharpBeg
 
             //------------------------------File & FileInfo---------------
             //File
-            //var path = "c:\\somefile.jpg";
+            var path = @"C:\Users\vranjan\OneDrive - WatchGuard Technologies Inc\Desktop\CheckFiles.txt";
             //File.Copy("c:\\temp\\myfile.jpg","d:\\temp\\myfile.jpg", true); //true- if file exist - overwrite
             //File.Delete(path);
 
@@ -18,6 +18,28 @@ namespace CSharpBeg
             //{
             //    //
             //}
+
+            
+            string[] createText = { "1st", "2nd", "3rd", "4th", "5th" };
+
+            File.WriteAllLines(path, createText);
+
+            
+
+            string text = "Added some new text";
+            File.AppendAllText(path, text);
+
+            string[] fileLines = File.ReadAllLines(path);
+
+            foreach (string line in fileLines)
+            {
+               
+                //Console.WriteLine(line);
+            }
+            //Read a specific  line in a file 
+            //Console.WriteLine(fileLines[2]);
+
+
 
             //var content= File.ReadAllText(path);
 
@@ -75,8 +97,7 @@ namespace CSharpBeg
             //Console.WriteLine("File name witout extension: "+ Path.GetFileNameWithoutExtension(path));
             //Console.WriteLine("Directory Name: "+ Path.GetDirectoryName(path));
 
-            var path = @"C:\Users\vranjan\OneDrive - WatchGuard Technologies Inc\Desktop\Question1.txt";
-            var content= File.ReadAllText(path);
+            var content = File.ReadAllText(path);
             content= content.ToString();
             string[] words = content.Split(" ");
 
@@ -91,7 +112,22 @@ namespace CSharpBeg
                     longString = words[i];
                 }
             }
-            Console.WriteLine(longString);
+            //Console.WriteLine(longString);
+
+            var files = Directory.GetFiles(@"C:\Users\vranjan\OneDrive - WatchGuard Technologies Inc\Desktop", "*.sln", SearchOption.AllDirectories);
+
+
+
+            foreach (var item in files)
+            {
+                //Console.WriteLine(item);
+            }
+
+            var direc1 = @"C:\\Users\\vranjan\\OneDrive - WatchGuard Technologies Inc\\Desktop\\DIectory 1";
+            var direc2 = @"C:\Users\vranjan\OneDrive - WatchGuard Technologies Inc\Desktop\";
+
+            //Directory.Move(direc1, direc2);
+
         }
     }
 }

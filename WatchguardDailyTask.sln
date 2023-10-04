@@ -21,7 +21,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProceduralProgramming", "Pr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FileSystem", "FileSystem\FileSystem.csproj", "{504CEE5F-23BD-461B-9E85-689EDEFBEE1A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Revision", "Revision\Revision.csproj", "{73E8DB96-A5E8-4ED6-8143-9E4CF28E13B3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Revision", "Revision\Revision.csproj", "{73E8DB96-A5E8-4ED6-8143-9E4CF28E13B3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Classes", "Classes\Classes.csproj", "{7702F85F-D8C7-4E0A-B41F-4718BD28A8FF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +71,10 @@ Global
 		{73E8DB96-A5E8-4ED6-8143-9E4CF28E13B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{73E8DB96-A5E8-4ED6-8143-9E4CF28E13B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{73E8DB96-A5E8-4ED6-8143-9E4CF28E13B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7702F85F-D8C7-4E0A-B41F-4718BD28A8FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7702F85F-D8C7-4E0A-B41F-4718BD28A8FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7702F85F-D8C7-4E0A-B41F-4718BD28A8FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7702F85F-D8C7-4E0A-B41F-4718BD28A8FF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

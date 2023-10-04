@@ -99,10 +99,10 @@ namespace CSharpBeg
             Student s2 = new Student(2, "Vaishali", 23);
             //Console.WriteLine(s2.id);
 
-            //Person p1 = new Person(); - doesnt work
-            //Person p2 = new Person(12, "Vaish", 23, Person.Mood.happy);
-            Person p1 = new Person(Person.Mood.happy);
-            Person p2 = new Person(Person.Mood.happy);
+           // Person p1 = new Person(); 
+            Person p2 = new Person(12, "Vaish", 23, Person.Mood.happy);
+            //Person p1 = new Person(Person.Mood.happy);
+            //Person p2 = new Person(Person.Mood.happy);
             Person p3 = new Person(Person.Mood.sad);
             Person p4 = new Person(Person.Mood.sad);
             Person p5 = new Person(Person.Mood.happy);
