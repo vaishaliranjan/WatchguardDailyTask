@@ -1,4 +1,10 @@
 ﻿namespace CSharpInt
 {
-    public class Order { }
+    public class Order {
+        int id;
+        public Order()
+        {
+            id = 1;
+        }
+    }
 }
