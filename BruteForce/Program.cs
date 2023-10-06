@@ -7,17 +7,24 @@ class Program
     static void Main(string[] args)
     {
         StringBuilder sb = new StringBuilder("aaa");
-
+        int numOfAttempts = 0;
         while (true)
         {
-            if (sb.ToString() == "akshat")
+            if (numOfAttempts > 5)
+            {
+                Console.WriteLine("you have reached the maximum number of login attempts");
+                break;
+            }
+            if (sb.ToString() == "pass")
             {
                 Console.WriteLine("Matched: " + sb.ToString());
+                Console.WriteLine("Number of attempts: "+ numOfAttempts);
                 break;
             }
 
             //Print the current combination
             Console.WriteLine(sb.ToString());
+            numOfAttempts++;
 
             //Generate the next combination
             IncrementStringBuilder(sb);
