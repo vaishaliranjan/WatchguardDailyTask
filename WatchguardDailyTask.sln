@@ -45,11 +45,19 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InheritanceConstructor", "I
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UpcastingDowncasting", "UpcastingDowncasting\UpcastingDowncasting.csproj", "{3E90875F-D389-478D-9307-4692293C3447}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MethodOverriding", "MethodOverriding\MethodOverriding.csproj", "{2401530F-8B61-4D31-971F-42AD2B7D9BA3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MethodOverriding", "MethodOverriding\MethodOverriding.csproj", "{2401530F-8B61-4D31-971F-42AD2B7D9BA3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbstractClassMembers", "AbstractClassMembers\AbstractClassMembers.csproj", "{7CE749AD-D201-4B7B-BDAA-8039AF24E737}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AbstractClassMembers", "AbstractClassMembers\AbstractClassMembers.csproj", "{7CE749AD-D201-4B7B-BDAA-8039AF24E737}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterfaceTestability", "InterfaceTestibility\InterfaceTestability.csproj", "{24AA6D3E-29D4-4BB3-A942-98668ADBEDF3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InterfaceTestability", "InterfaceTestibility\InterfaceTestability.csproj", "{24AA6D3E-29D4-4BB3-A942-98668ADBEDF3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Testability.UnitTests", "InterfaceTestablility.UnitTests\Testability.UnitTests.csproj", "{FD385352-BBF4-4AEA-A58D-B5EB91495CFE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Interface", "Interface\Interface.csproj", "{6813027A-BDF0-46B4-ACA6-86A97A60C591}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InheritanceExercise", "InheritanceExercise\InheritanceExercise.csproj", "{209B06C2-3E3E-4C83-A155-DF0FE0FA7572}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PolymorphismExercise", "PolymorphismExercise\PolymorphismExercise.csproj", "{9EB9DAAC-3A32-4FE2-970E-D1DF83A0A2ED}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -153,6 +161,22 @@ Global
 		{24AA6D3E-29D4-4BB3-A942-98668ADBEDF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{24AA6D3E-29D4-4BB3-A942-98668ADBEDF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{24AA6D3E-29D4-4BB3-A942-98668ADBEDF3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD385352-BBF4-4AEA-A58D-B5EB91495CFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD385352-BBF4-4AEA-A58D-B5EB91495CFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD385352-BBF4-4AEA-A58D-B5EB91495CFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD385352-BBF4-4AEA-A58D-B5EB91495CFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6813027A-BDF0-46B4-ACA6-86A97A60C591}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6813027A-BDF0-46B4-ACA6-86A97A60C591}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6813027A-BDF0-46B4-ACA6-86A97A60C591}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6813027A-BDF0-46B4-ACA6-86A97A60C591}.Release|Any CPU.Build.0 = Release|Any CPU
+		{209B06C2-3E3E-4C83-A155-DF0FE0FA7572}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{209B06C2-3E3E-4C83-A155-DF0FE0FA7572}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{209B06C2-3E3E-4C83-A155-DF0FE0FA7572}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{209B06C2-3E3E-4C83-A155-DF0FE0FA7572}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9EB9DAAC-3A32-4FE2-970E-D1DF83A0A2ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EB9DAAC-3A32-4FE2-970E-D1DF83A0A2ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EB9DAAC-3A32-4FE2-970E-D1DF83A0A2ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EB9DAAC-3A32-4FE2-970E-D1DF83A0A2ED}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

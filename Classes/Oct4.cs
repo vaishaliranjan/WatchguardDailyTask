@@ -105,9 +105,9 @@ namespace CSharpInt
 
 
             ///////////////////Object Initializers/////////////////
-            ///without constrctor; - to avoid multiple calls 
+            ///without constrctor; - to avoid multiple calls                    
             ///
-            // Customer c3 = new Customer { id = 3, Name = "Watchguard" };
+            //Customer c3 = new Customer { id = 3, Name = "Watchguard" };
             //Console.WriteLine(c3.Name);
 
             //Customer vaishali = new Customer(2);
