@@ -50,11 +50,11 @@ namespace CSharpBeg
 
             //-------------------------------------------------------------------------2. TimeSPan --------------------------------------------
             TimeSpan timeSpan = new TimeSpan(11, 3, 56);//(hour, min, sec)
-           
+
             TimeSpan timeSpan1 = new TimeSpan(11, 0, 0);
             //other components ->0
             var timeSpan2 = TimeSpan.FromHours(13);
-            var timespan3= TimeSpan.FromMinutes(12);
+            var timespan3 = TimeSpan.FromMinutes(12);
             var timeSpan4 = TimeSpan.FromSeconds(13);
 
             //Console.WriteLine(timeSpan);
@@ -95,3 +95,4 @@ namespace CSharpBeg
         }
     }
 }
+

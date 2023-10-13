@@ -67,7 +67,7 @@ namespace CSharpBeg
             //Directory
             // Directory.CreateDirectory(path);
 
-            //var files=Directory.GetFiles(path, ".sln",SearchOption.AllDirectories);
+            var files=Directory.GetFiles(path, ".sln",SearchOption.AllDirectories);
             //foreach (var file in files) 
             //{
             //    Console.WriteLine(file);
