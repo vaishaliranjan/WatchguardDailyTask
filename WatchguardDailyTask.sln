@@ -73,7 +73,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AssemblyyTwo", "AssemblyyTw
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CompositionWithInterfaces", "CompositionWithInterfaces\CompositionWithInterfaces.csproj", "{8968597A-D610-42CA-8E31-E128E642165D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StructVsClass", "StructVsClass\StructVsClass.csproj", "{42034890-C547-4938-8730-C4DBBD0165A7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StructVsClass", "StructVsClass\StructVsClass.csproj", "{42034890-C547-4938-8730-C4DBBD0165A7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RevisionBeg&Adv", "RevisionBeg&Adv\RevisionBeg&Adv.csproj", "{76D7F863-9A5D-4C50-8D17-8734779C5FF4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -225,6 +227,10 @@ Global
 		{42034890-C547-4938-8730-C4DBBD0165A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{42034890-C547-4938-8730-C4DBBD0165A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{42034890-C547-4938-8730-C4DBBD0165A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76D7F863-9A5D-4C50-8D17-8734779C5FF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76D7F863-9A5D-4C50-8D17-8734779C5FF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76D7F863-9A5D-4C50-8D17-8734779C5FF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76D7F863-9A5D-4C50-8D17-8734779C5FF4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
