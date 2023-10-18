@@ -189,7 +189,7 @@
 //namespace CSharpInter
 //{
 
-    
+
 //    public class Program
 //    {
 //        //value types cant be null-> using this class we can give null values to them
@@ -216,12 +216,127 @@
 //                return default(T);
 //            }
 //        }
-        
+
 //        static void Main(string[] args)
 //        {
 //            var number = new Nullable<int>(5);
 //            Console.WriteLine("Has Value? "+ number.HasValue);
 //            Console.WriteLine("Value: "+ number.GetValueOrDefault());
+//        }
+//    }
+//}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//**********************************************************************
+//                                 GENERIC METHODS 
+//**********************************************************************
+
+
+//using System;
+//namespace CSharpInter
+//{
+//    public class Example
+//    {
+//        //public static void PrintArr(int[] arr)
+//        //{
+//        //    for(int i = 0; i < arr.Length; i++)
+//        //    {
+//        //        Console.WriteLine(arr[i]);
+//        //    }
+//        //}
+
+//        //public static void PrintArr(string[] arr)
+//        //{
+//        //    for (int i = 0; i < arr.Length; i++)
+//        //    {
+//        //        Console.WriteLine(arr[i]);
+//        //    }
+//        //}
+
+//        ///MAKE IT GENERIC
+//        ///
+//        public static void PrintArr<T>(T[] arr)
+//        {
+//            for (int i = 0; i < arr.Length; i++)
+//            {
+//                Console.WriteLine(arr[i]);
+//            }
+//        }
+
+//        //BOXING
+//        //public static void PrintArr(Object[] arr)
+//        //{
+//        //    for (int i = 0; i < arr.Length; i++)
+//        //    {
+//        //        Console.WriteLine(arr[i]);
+//        //    }
+//        //}
+//    }
+//    class Program
+//    {
+//        static void Main(string[] args)
+//        {
+//            Example.PrintArr(new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, });
+//            //but this wont for strings and all we would need to over load the function
+//            Example.PrintArr(new string[] { "Vaishali", "Ranjan", "Ritika", "Narang" });
+//            Example.PrintArr(new char[] {'A', 'B', 'C' });
+//        }
+//    }
+//}
+
+
+
+//**********************************************************************
+//                                 GENERIC CLASSES 
+//**********************************************************************
+//using System;
+//namespace CSharpInter
+//{
+//    public class Example<T>
+//    {
+//        T box;
+//        public Example(T b)
+//        {
+//            this.box = b;
+//        }
+//        public T getBox()
+//        {
+//            return this.box;
+//        }
+//    }
+//    public class Program
+//    {
+
+//        static void Main(string[] args)
+//        {
+//            Example<int> e = new Example<int>(20);
+//            Console.WriteLine(e.getBox());
+//            Example<string> str = new Example<string>("Vaishali");
+//            Console.WriteLine(str.getBox());
 //        }
 //    }
 //}
