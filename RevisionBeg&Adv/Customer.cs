@@ -45,26 +45,26 @@
 //}
 
 
-using System;
-namespace CSharpInter
-{
-    class Customer
-    {
-        public int Id;
-        public string Name;
+//using System;
+//namespace CSharpInter
+//{
+//    class Customer
+//    {
+//        public int Id;
+//        public string Name;
 
-        public void Add()
-        {
-            this.Validate();
-            this.Update();
-        }
-        private bool Validate()
-        {
-            return true;
-        }
-        public void Update()
-        {
-            return true;
-        }
-    }
-}
+//        public void Add()
+//        {
+//            this.Validate();
+//            this.Update();
+//        }
+//        private bool Validate()
+//        {
+//            return true;
+//        }
+//        public void Update()
+//        {
+//            return true;
+//        }
+//    }
+//}

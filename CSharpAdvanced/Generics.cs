@@ -340,3 +340,31 @@
 //        }
 //    }
 //}
+
+
+
+
+//using System;
+//using System.Text;
+
+//namespace CSharpAdv
+//{
+//    public class GenericClass<T> where T: class
+//    {
+//        public static void Print(T obj)
+//        {
+//            Console.WriteLine(obj);
+//        }
+//    }
+//    public class Genrics
+//    {
+//        static void Main(string[] args)
+//        {
+//            string str = "Vaishali";
+//            GenericClass<string>.Print(str);
+//            StringBuilder sb = new StringBuilder("Ranjan");
+//            GenericClass<StringBuilder>.Print(sb);
+//            //GenericClass<int>.Print(2);
+//        }
+//    }
+//}
