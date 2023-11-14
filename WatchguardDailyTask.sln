@@ -77,7 +77,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RevisionBeg&Adv", "Revision
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharpAdvanced", "CSharpAdvanced\CSharpAdvanced.csproj", "{DCC84522-96ED-4541-85F3-208726E497C4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Doubts", "Doubts\Doubts.csproj", "{2534418E-662D-4D22-84F2-82C9AE9712CB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Doubts", "Doubts\Doubts.csproj", "{2534418E-662D-4D22-84F2-82C9AE9712CB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nov7Discussion", "Nov7Discussion\Nov7Discussion.csproj", "{2A5F0AF4-6A96-4BEC-BA5C-520F493C9B8A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -237,6 +239,10 @@ Global
 		{2534418E-662D-4D22-84F2-82C9AE9712CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2534418E-662D-4D22-84F2-82C9AE9712CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2534418E-662D-4D22-84F2-82C9AE9712CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A5F0AF4-6A96-4BEC-BA5C-520F493C9B8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A5F0AF4-6A96-4BEC-BA5C-520F493C9B8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A5F0AF4-6A96-4BEC-BA5C-520F493C9B8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A5F0AF4-6A96-4BEC-BA5C-520F493C9B8A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

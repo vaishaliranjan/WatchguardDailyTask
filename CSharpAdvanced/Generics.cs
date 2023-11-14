@@ -118,31 +118,69 @@
 //*********************************CONSTRAINT TO A CLASS ****************************
 
 //using System;
+//using System.Diagnostics;
+
 //namespace CSharpInter
 //{
-//    public class Product
+//    public class Product<TOne, TTwo, TThree>
 //    {
+//        public TOne id;
+//        public TTwo name;
+//        public TThree address;
+//        public TOne[] arr;
+
+//        public List<TTwo> list;
+
+//        public Product(int n)
+//        {
+//            //this.id = 12;
+//            //this.name = 45;
+//            arr= new TOne[n];
+//            list = new List<TTwo>();
+//        }
+
+
 //        public string Title { get; set; }
 //        public float Price { get; set; }
 //    }
-//    public class Book : Product
+//public class Book : Product
+//{
+//    public string Isbn { get; set; }
+//}
+//public class DiscountCalculator<TProduct> where TProduct : Product
+//{
+//    public float CalculateDiscount(TProduct product)
 //    {
-//        public string Isbn { get; set; }
+//        return product.Price;
 //    }
-//    public class DiscountCalculator<TProduct> where TProduct : Product
-//    {
-//        public float CalculateDiscount(TProduct product)
-//        {
-//            return product.Price;
-//        }
-//    }
+//}
 //    public class Program
 //    {
 //        static void Main(string[] args)
 //        {
-//            var discount = new DiscountCalculator<Product>();
-//            discount.CalculateDiscount(new Product());
-//            discount.CalculateDiscount(new Book());
+//            //var discount = new DiscountCalculator<Product>();
+//            //discount.CalculateDiscount(new Product());
+//            //discount.CalculateDiscount(new Book());
+//            Product<int, string, string> p = new Product<int, string, string>(3);
+//            Console.WriteLine(p.id);
+//            Console.WriteLine(p.name);
+//            Console.WriteLine(p.address);
+//            p.arr[0] = 12;
+//            p.arr[1] = 13;
+//            p.arr[2] = 14;
+//            p.list.Add("apple");
+//            p.list.Add("mango");
+//            p.list.Remove("apple");
+//            p.list.RemoveAt(0);
+
+
+//            Product<string, string, string> p1 = new Product<string, string, string>(4);
+//            Console.WriteLine(p.id);
+//            Console.WriteLine(p.name);
+//            Console.WriteLine(p.address);
+//            p1.arr[0] = "1";
+//            p1.arr[1] = "2";
+//            p1.arr[2] = "3";
 //        }
 //    }
 //}
@@ -365,6 +403,159 @@
 //            StringBuilder sb = new StringBuilder("Ranjan");
 //            GenericClass<StringBuilder>.Print(sb);
 //            //GenericClass<int>.Print(2);
+//        }
+//    }
+//}
+
+
+//namespace CSharp
+//{
+//    public class Something<T>
+//    {
+//        public T Function()
+//        {
+//            return default(T);
+//        }
+
+
+//    }
+//public class Program
+//{
+//    public static void Main(string[] args)
+//    {
+//        Something<int> Something = new Something<int>();
+//        Console.WriteLine(Something.Function());
+
+//        Something<string> s1 = new Something<string>();
+//        Console.WriteLine(s1.Function());
+
+//        Something<char> s2 = new Something<char>();
+//        Console.WriteLine(s2.Function());
+
+//        Something<bool> s3 = new Something<bool>();
+//        Console.WriteLine(s3.Function());
+//    }
+//}
+
+//}
+
+
+//namespace CSharp
+//{
+//    public class Something
+//    {
+//        public void Dict1<T>(T index, T value)
+//        {
+//            Console.WriteLine(index + ": " + value);
+//            Console.WriteLine("2nd fuc");
+//        }
+//        public void Dict1<T>(int index, T value)
+//        {
+//            Console.WriteLine(index + ": " + value);
+//            Console.WriteLine("first func");
+//        }
+
+
+
+//    }
+//    public class Program
+//    {
+//        public static void Main(string[] args)
+//        {
+//            Something s1 = new Something();
+//            s1.Dict1<int>(1, 10);
+
+//            Something s2 = new Something();
+//            s2.Dict1(1, "vaishali");
+
+
+//        }
+//    }
+
+//}
+
+//namespace CSharp
+//{
+//    public class Car
+//    {
+//        public Car(int i)
+//        {
+
+//        }
+//    }
+//    public class Bike
+//    {
+
+//    }
+//    public class Something<T> where T: new()
+//{
+
+//        public Something()
+//        {
+//            T obj = new T();
+//        }
+
+//}
+//public class Program
+//{
+//    public static void Main(string[] args)
+//    {
+//            Something<Car> car = new Car();
+
+//            Something<Bike> bike = new Something<Bike>();
+
+
+//    }
+//}
+
+//}
+
+//namespace CSharp
+//{
+//    public interface IVehicle
+//    {
+
+//    }
+//    public class Car: IVehicle
+//    {
+
+//    }
+//    public class BailGadi
+//    {
+
+//    }
+//    public class Something<T> where T : IVehicle { }
+
+//    public class program
+//    {
+//        public static void Main(string[] args)
+//        {
+//            Something<Car> something = new Something<Car>();
+//            Something<BailGadi> something1 = new Something<BailGadi>();
+//        }
+//    }
+//}
+
+//namespace CSHarp
+//{
+//    public class SOmething<T, U> where T: class where U: struct
+//    {
+//        public void Func(T obj1, U obj2)
+//        {
+//            Console.WriteLine(obj1);
+//            Console.WriteLine(obj2);
+//        }
+
+        
+//    }
+
+//    public class Program
+//    {
+//        public static void Main(string[] args)
+//        {
+//            SOmething<string, int> s= new SOmething<string, int>();
+//            SOmething<int, int> s1 = new SOmething<int, int>();
+
 //        }
 //    }
 //}

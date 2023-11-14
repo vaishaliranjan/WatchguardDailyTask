@@ -19,7 +19,7 @@
 //            Console.WriteLine(message);
 //        }
 //    }
-//    internal class Delegates: Something
+//    internal class Delegates : Something
 //    {
 //        static void Main(string[] args)
 //        {
